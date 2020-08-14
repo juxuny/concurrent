@@ -77,7 +77,7 @@ func TestBalance(t *testing.T) {
 
 func TestPerformance(t *testing.T) {
 	sm := sync.Map{}
-	m := NewMap()
+	m := NewMapWithMod(100000)
 	n := 100 * 10000
 	a := make([]string, n)
 	for i := range a {
